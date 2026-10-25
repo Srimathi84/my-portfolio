@@ -1,0 +1,438 @@
+
+/* Step 2: Basic page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1020;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+
+header {
+    padding: 20px 8%;
+    border-bottom: 1px solid #252b40;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #b9a7ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b9a7ff;
+}
+
+
+/* Navigation Bar */
+
+header {
+    padding: 20px 8%;
+    border-bottom: 1px solid #252b40;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #b9a7ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b9a7ff;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.intro {
+    color: #b9a7ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #b9a7ff;
+}
+
+.hero h2 {
+    color: #c5c9d8;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #aeb5c8;
+    max-width: 580px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #b9a7ff;
+    color: #0b1020;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    border: 1px solid #b9a7ff;
+    color: #b9a7ff;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Shared Section Styling */
+
+.section {
+    padding: 80px 8%;
+}
+
+.section-label {
+    color: #b9a7ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.about-content {
+    max-width: 750px;
+    color: #aeb5c8;
+}
+
+.about-content p {
+    margin-bottom: 16px;
+}
+
+
+/* Skills Section */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #131a2e;
+    border: 1px solid #252b40;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #b9a7ff;
+}
+
+.skill-card h3 {
+    color: #b9a7ff;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.skill-card p {
+    color: #aeb5c8;
+    font-size: 14px;
+}
+
+
+/* Projects Section */
+
+.accent {
+    color: #b9a7ff;
+}
+
+.projects-intro {
+    color: #aeb5c8;
+    margin-top: -12px;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background-color: #131a2e;
+    border: 1px solid #252b40;
+    border-radius: 12px;
+    padding: 28px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #b9a7ff;
+}
+
+.project-number {
+    color: #b9a7ff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+.project-card h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.project-subtitle {
+    color: #d6ceff;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.project-card h4 {
+    color: #f5f5f5;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: #aeb5c8;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    color: #d6ceff;
+    background-color: #25213d;
+    border: 1px solid #393153;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.projects-outro {
+    color: #aeb5c8;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Mobile-friendly project layout */
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    text-align: center;
+    border-top: 1px solid #252b40;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto 28px;
+    color: #aeb5c8;
+}
+
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.contact-links a {
+    color: #b9a7ff;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    padding: 25px 8%;
+    border-top: 1px solid #252b40;
+    color: #8992aa;
+    font-size: 13px;
+}
+
+.footer p + p {
+    margin-top: 5px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 70px 5%;
+    }
+
+    .hero h1 {
+        overflow-wrap: anywhere;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    .contact-links {
+        flex-wrap: wrap;
+    }
+}
